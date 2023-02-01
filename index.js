@@ -34,7 +34,7 @@ app.use(requestIp.mw())
 
 app.get("/api/whoami/", (req, res) => {
   res.json({
-    ipadress: req.clientIp,
+    ipaddress: req.clientIp,
     language: req.acceptsLanguages(),
     software: req.get('User-Agent')
   })
